@@ -1,6 +1,6 @@
 # PDF Worksheet Generator
 
-This project is a Python script that generates a PDF worksheet with a specified total number of digits. The worksheet is divided into 10 columns and a variable number of rows. A certain number of digits are replaced with underscores randomly. The PDF is styled to be visually appealing and ensures that no two blanks are adjacent.
+The purpose of this project is to create a simple yet effective Python script that automates the generation of counting worksheets suitable for pre-K or kindergarten students. These worksheets are designed to help young learners practice their counting skills in an engaging and structured way.Python script  generates a PDF worksheet with a specified total number of digits. The worksheet is divided into 10 columns and a variable number of rows. A certain number of digits are replaced with underscores randomly. The PDF is styled to be visually appealing and ensures that no two blanks are adjacent.
 
 ## Installation
 
