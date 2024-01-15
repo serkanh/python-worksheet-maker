@@ -9,7 +9,8 @@ from reportlab.pdfbase.ttfonts import TTFont
 def create_worksheet(filename, total_numbers, blanks):
     c = canvas.Canvas(filename, pagesize=letter)
     width, height = letter
-    column_width = width / 10
+    margin = 50  # 50px margin
+    column_width = (width - 2 * margin) / 10
     row_height = 20  # Adjust as needed
 
     # Register a nice-looking font
@@ -33,8 +34,8 @@ def create_worksheet(filename, total_numbers, blanks):
         for col in range(10):
             index = row * 10 + col
             if index < total_numbers:
-                x = col * column_width
-                y = height - (row + 1) * row_height
+                x = margin + col * column_width
+                y = height - margin - (row + 1) * row_height
                 c.setFont('Vera', 14)  # Use the registered font
                 if numbers[index] == '_':
                     c.setFillColor(HexColor('#ff0000'))  # Red for blanks
